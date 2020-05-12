@@ -76,7 +76,19 @@ public class Medico extends Pessoa implements Funcionario, Cloneable{
         }
         return m;
     }
+    
+    @Override
+    public boolean equals(Object obj){
+        return super.equals(obj);
+    }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+    
+        
+    
     @Override
     public String toString() {
         return "Medico:\n" + super.toString() +

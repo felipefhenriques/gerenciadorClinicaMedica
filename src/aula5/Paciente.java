@@ -46,6 +46,16 @@ public class Paciente extends Pessoa implements Cloneable{
       Paciente p = (Paciente) super.clone();
      return super.clone();   
     }
+    
+    @Override
+    public boolean equals(Object obj){
+        return super.equals(obj);
+    }
+    
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 
     @Override
     public String toString() {

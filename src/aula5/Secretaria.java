@@ -54,9 +54,19 @@ public class Secretaria extends Pessoa implements Funcionario {
     public Object clone() throws CloneNotSupportedException{
 //        Secretaria s = (Secretaria) super.clone();
 //        s.departamento = departamento;
-//        s.ramal = ramal;       é o memsmo que 
+//        s.ramal = ramal;       é o mesmo que 
         return super.clone();
         
+    }
+    
+    @Override
+    public boolean equals(Object obj){
+        return super.equals(obj);
+    }
+    
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
     
     @Override
