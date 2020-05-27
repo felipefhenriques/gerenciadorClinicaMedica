@@ -34,7 +34,7 @@ public abstract class Pessoa implements Cloneable {
     public boolean equals(Object obj) {
         if(obj instanceof Pessoa) {
             Pessoa p = (Pessoa) obj;
-            if(this.cpf.equals(p.cpf) && this.nome.equals(p.nome)) {
+            if(this.cpf.equals(p.cpf)) {
                 return true;
             }
         }
@@ -104,6 +104,6 @@ public abstract class Pessoa implements Cloneable {
 
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + nome + "\n, cpf=" + cpf + "\n, endereco=" + endereco + '}';
+        return "Pessoa{" + "nome=" + nome + "\ncpf=" + cpf + "\nendereco=" + endereco + '}';
     }
 }

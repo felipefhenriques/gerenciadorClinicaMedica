@@ -24,6 +24,10 @@ public class Medico extends Pessoa implements Funcionario, Cloneable{
         super(cpf);
     }
 
+    public int getCrm() {
+        return crm;
+    }
+
     @Override
     public double getRemuneracao() {
         return 10000;

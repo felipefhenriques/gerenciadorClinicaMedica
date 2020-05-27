@@ -5,12 +5,19 @@
  */
 package aula5;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+
 /**
  *
  * @author anton
  */
 public class GerenciadorClinicaMedica {
 
+    static Scanner valor = new Scanner (System.in);
+    
     private static BancoDeDados pessoas = new BancoDeDados();
     /**
      * @param args the command line arguments
@@ -41,5 +48,16 @@ public class GerenciadorClinicaMedica {
         
         Pessoa secretaria = new Secretaria();
         System.out.println("Informação da secretária: ");
+        
+        System.out.println("Qual CPF deseja buscar?");
+        String cpf = valor.nextLine();
+        Pessoa busca = pessoas.findByCpf(cpf);
+        System.out.println(busca);
+        
+        System.out.println("Qual é o nome que deseja buscar?");
+        String nome = valor.nextLine();
+        List<Pessoa> buscaNomes = pessoas.listByNome(nome);
+        System.out.println(buscaNomes);
+        
     }  
 }
